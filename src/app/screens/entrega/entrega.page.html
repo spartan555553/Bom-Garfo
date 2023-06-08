@@ -1,0 +1,18 @@
+<div class="top-container">
+  <ion-icon size="large" name="chevron-back-sharp" routerLink="/restaurants"></ion-icon>
+  <ion-label class="ion-label-1">Bom Garfo</ion-label>
+  <ion-icon class="ion-button-2" size="large" name="home-sharp" routerLink="/restaurants"></ion-icon>
+
+  <br />
+  <br />
+  <br />
+
+  <ion-label class="ion-label-2">Estado da sua encomenda:</ion-label>
+
+  <ion-checkbox [checked]="isOrderPlaced">Pedido Efetuado</ion-checkbox>
+  <ion-checkbox [checked]="isOrderPrepared">Pedido Preparado</ion-checkbox>
+  <ion-checkbox [checked]="isOrderInDelivery">Pedido em Entrega</ion-checkbox>
+  <ion-checkbox [checked]="isOrderDelivered">Pedido Entregue</ion-checkbox>
+
+  <ion-button class="rate-button" routerLink="/avaliacao">Avalie o seu pedido</ion-button>
+</div>

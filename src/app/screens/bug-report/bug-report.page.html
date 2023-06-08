@@ -1,0 +1,24 @@
+<ion-content [fullscreen]="true">
+  <ion-icon class="back-button" size="large" name="chevron-back-sharp" routerLink="/settings"></ion-icon>
+
+  <ion-label class="ion-label">Bom Garfo</ion-label>
+
+  <div class="input-container">
+    <ion-input #errorTypeInput class="ion-input-1" label="Tipo de erro" label-placement="floating" fill="solid" placeholder="Tipo de Erro"></ion-input>
+    <br />
+    <ion-input #errorDescriptionInput class="ion-input-2" label="Descrição do erro" label-placement="floating" fill="solid" placeholder="Descrição do erro"></ion-input>
+    <br />
+  </div>
+
+  
+  <ion-button class="ion-button-1" shape="round" (click)="sendReport()">Enviar Relatório</ion-button>
+
+  
+
+  <div class="icon-container">
+    <ion-icon size="large" class="ion-icon-1" name="home-sharp" routerLink="/home"></ion-icon>
+    <ion-icon size="large" name="exit-outline" routerLink="/home"></ion-icon>
+  </div>
+  
+
+</ion-content>

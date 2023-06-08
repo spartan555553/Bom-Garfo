@@ -1,0 +1,27 @@
+<div class="top-container">
+  <ion-icon size="large" name="chevron-back-sharp" routerLink="/restaurants"></ion-icon>
+  <ion-label class="screen-title">Bom Garfo</ion-label>
+  <ion-icon class="home-button" size="large" name="home-sharp" routerLink="/restaurants"></ion-icon>
+
+  <ion-searchbar class="ion-searchbar" [(ngModel)]="searchText" (ionChange)="searchItems()"></ion-searchbar>
+
+  <div class="card-container">
+    <div *ngFor="let item of filteredItems" class="card">
+      <ion-img class="card-image" [src]="item.image"></ion-img>
+    
+      <div class="card-details">
+        <h3 class="card-title">{{ item.name }}</h3>
+        <div class="rating">
+          <span class="rating-value">{{ item.rating }}/5</span>
+          <ion-icon class="star" *ngFor="let _ of [].constructor(item.rating)" name="star"></ion-icon>
+        </div>
+        <h2 class="price">{{ item.price }}€</h2>
+      </div>
+    
+      <ion-icon class="trash-button" slot="icon-only" name="trash-sharp" (click)="removeFromCart(item)"></ion-icon>
+    </div>
+  </div>
+
+  <ion-label class="total-price">Preço total: {{ getTotalPrice() }}€</ion-label>
+  <ion-button class="request-button" routerLink="/localizacao">Fazer pedido</ion-button>
+</div>

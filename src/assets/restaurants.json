@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "La Cabrera",
+      "rating": "4.9",
+      "image": "assets/images/cabrera.png",
+      "items": [
+        { "id": 1, "name": "Hamburger", "price": 10, "rating": "4.5", "image": "assets/images/hamburger.png" },
+        { "id": 2, "name": "Steak", "price": 20, "rating": "4.8", "image": "assets/images/steak.png" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bistrô",
+      "rating": "4.7",
+      "image": "assets/images/bistro.png",
+      "items": [
+        { "id": 3, "name": "Salad", "price": 8, "rating": "4.3", "image": "assets/images/salad.png" },
+        { "id": 4, "name": "Pasta", "price": 15, "rating": "4.6", "image": "assets/images/pasta.png" }
+      ]
+    }
+  ]
+  

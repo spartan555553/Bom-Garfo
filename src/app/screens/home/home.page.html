@@ -1,0 +1,22 @@
+
+<ion-content [fullscreen]="true">
+
+  <ion-label class="ion-label">Bom Garfo</ion-label>
+
+  <ion-input class="ion-input-1" label="Email" label-placement="floating" type="email" fill="solid" placeholder="Enter email"></ion-input>
+
+  <br />
+
+  <ion-input class="ion-input-2" label="Password" label-placement="floating" type="password" fill="solid" placeholder="Enter password"></ion-input>
+
+  <ion-button class="ion-button-1" (click)="checkCredentials()">Iniciar Sessão</ion-button>
+
+  <ion-button class="ion-button-2" routerLink="/create-account">Criar Conta</ion-button>
+
+  <div class="icon-container">
+    <ion-icon size="large" class="ion-icon-1" name="settings-sharp" routerLink="/settings"></ion-icon>
+    <ion-icon size="large" name="exit-outline" routerLink="/home"></ion-icon>
+  </div>
+  
+
+</ion-content>

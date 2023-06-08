@@ -1,0 +1,23 @@
+<div class="top-container">
+  <ion-icon size="large" name="chevron-back-sharp" routerLink="/home"></ion-icon>
+  <ion-label class="app-title">Bom Garfo</ion-label>
+  <ion-icon class="cart-button" size="large" name="cart-sharp" routerLink="/cart"></ion-icon>
+  
+  <ion-searchbar class="ion-searchbar" [(ngModel)]="searchText" (ionChange)="searchRestaurants()"></ion-searchbar>
+
+  <div class="card-container">
+    <div class="card" *ngFor="let restaurant of restaurants">
+      <ion-img class="card-img" [src]="restaurant.image"></ion-img>
+  
+      <div class="card-details">
+        <h3 class="restaurant-name">{{ restaurant.name }}</h3>
+        <div class="rating-container">
+          <h2 class="restaurant-rating">{{ restaurant.rating }}/5</h2>
+          <ion-icon class="star" name="star"></ion-icon>
+        </div>
+      </div>
+    
+      <ion-icon class="ion-add" slot="icon-only" name="arrow-forward-sharp" [routerLink]="'/foods/' + restaurant.id"></ion-icon>
+    </div>
+  </div>
+</div>

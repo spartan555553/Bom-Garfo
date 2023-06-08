@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+  <ion-icon class="back-button" size="large" name="chevron-back-sharp" routerLink="/home"></ion-icon>
+
+  <ion-label class="title">Bom Garfo</ion-label>
+
+  <div class="input-container">
+    <ion-input label="Novo Email" label-placement="floating" type="email" fill="solid" placeholder="New email"></ion-input>
+
+    <br />
+
+    <ion-input label="New Password" label-placement="floating" type="password" fill="solid" placeholder="New password"></ion-input>
+
+    <br />
+
+    <ion-input label="Confirm Password" label-placement="floating" type="new-password" fill="solid" placeholder="Confirm password"></ion-input>
+
+    <br />
+
+  </div>
+
+  <ion-button class="ion-button" (click)="updateCredentials()">Mudar Definições</ion-button>
+
+  
+
+  <div class="icon-container">
+    <ion-icon size="large" class="bug-button" name="bug-sharp" routerLink="/bug-report"></ion-icon>
+    <ion-icon size="large" name="exit-outline" routerLink="/bug-report"></ion-icon>
+  </div>
+  
+
+</ion-content>

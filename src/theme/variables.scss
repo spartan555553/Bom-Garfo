@@ -1,0 +1,37 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+/** Ionic CSS Variables **/
+:root {
+	--ion-background-color: #F6EACC;
+	--ion-background-color-rgb: 246,234,204;
+
+	--ion-text-color: #712D1F;
+	--ion-text-color-rgb: 113,45,31;
+
+	--ion-color-step-50: #efe1c3;
+	--ion-color-step-100: #e9d7bb;
+	--ion-color-step-150: #e2ceb2;
+	--ion-color-step-200: #dbc4a9;
+	--ion-color-step-250: #d5bba1;
+	--ion-color-step-300: #ceb198;
+	--ion-color-step-350: #c7a88f;
+	--ion-color-step-400: #c19e87;
+	--ion-color-step-450: #ba957e;
+	--ion-color-step-500: #b48c76;
+	--ion-color-step-550: #ad826d;
+	--ion-color-step-600: #a67964;
+	--ion-color-step-650: #a06f5c;
+	--ion-color-step-700: #996653;
+	--ion-color-step-750: #925c4a;
+	--ion-color-step-800: #8c5342;
+	--ion-color-step-850: #854939;
+	--ion-color-step-900: #7e4030;
+	--ion-color-step-950: #783628;
+}
+
+@font-face {
+	font-family: 'Italianno';
+	src: url('../assets/fonts/Italianno-Regular.ttf') format('truetype');
+  }
+  

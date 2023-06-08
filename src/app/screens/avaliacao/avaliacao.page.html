@@ -1,0 +1,35 @@
+<div class="top-container">
+  <ion-icon size="large" name="chevron-back-sharp" routerLink="/restaurants"></ion-icon>
+  <ion-label class="ion-label-1">Bom Garfo</ion-label>
+</div>
+
+<div class="avalie-label-1">Avalie o serviço de entrega</div>
+
+<div class="star-container-1">
+  <ion-icon
+    size="large"
+    [name]="getServiceStarIconName(star)"
+    *ngFor="let star of serviceStars"
+    (click)="rateService(star)"
+  ></ion-icon>
+</div>
+
+<div class="avalie-label-2">Avalie o seu pedido</div>
+
+<div class="star-container-2">
+  <ion-icon
+    size="large"
+    [name]="getOrderStarIconName(star)"
+    *ngFor="let star of orderStars"
+    (click)="rateOrder(star)"
+  ></ion-icon>
+</div>
+
+<ion-button class="submit-button" (click)="logRatings()">Submit Ratings</ion-button>
+
+<div class="icon-container">
+  <ion-icon size="large" class="ion-icon-1" name="home-sharp" routerLink="/restaurants"></ion-icon>
+  <ion-icon size="large" name="exit-outline" routerLink="/home"></ion-icon>
+</div>
+
+

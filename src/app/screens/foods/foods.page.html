@@ -1,0 +1,22 @@
+<div class="top-container">
+  <ion-icon size="large" name="chevron-back-sharp" routerLink="/restaurants"></ion-icon>
+  <ion-label class="restaurant-title">Bom Garfo</ion-label>
+  <ion-icon class="cart-button" size="large" name="cart-sharp" routerLink="/cart"></ion-icon>
+
+  <ion-searchbar class="ion-searchbar" [(ngModel)]="searchText" (ionChange)="searchItems()"></ion-searchbar>
+
+  <div class="card-container">
+    <div class="card" *ngFor="let food of filteredItems">
+      <ion-img class="card-img" [src]="food.image"></ion-img>
+
+      <div class="card-details">
+        <h3 class="title-name">{{ food.name }}</h3>
+        <div class="rating-container">
+          <h2 class="food-rating">{{ food.rating }}/5</h2>
+          <ion-icon class="star" name="star"></ion-icon>
+        </div>
+        <ion-icon class="add-button" slot="icon-only" name="add" (click)="addToCart(food)"></ion-icon>
+      </div>
+    </div>
+  </div>
+</div>

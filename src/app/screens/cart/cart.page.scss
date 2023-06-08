@@ -1,0 +1,110 @@
+.top-container {
+    color: #712D1F;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: xx-large;
+}
+
+.screen-title {
+    margin-left: 5rem;
+}
+
+.home-button {
+    margin-left: 5rem;
+}
+
+.ion-searchbar {
+    margin-top: 3rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+    background-color: #f7efd3ad;
+    width: 23rem;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card-image {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .trash-button {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    font-size: 35px;
+    color: #ffc107;
+  }
+  
+  .card-details {
+    flex: 1;
+    margin-bottom: 10px;
+    margin-top: -5px;
+  }
+  
+  .card-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #8F816B;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+  }
+
+  .rating-value {
+    color: #8F816B;
+  }
+  
+  .star {
+    color: #ffc107;
+  }
+  
+  .price {
+    font-size: 25px;
+    font-weight: bold;
+    color: #712D1F;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+  }
+  
+  
+  .total-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+.request-button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --background: #FC9A5E;
+    width: 23rem;
+    height: 3rem;
+    font-size: 16px;
+}
